@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script type="text/javascript" src="./assets/javascript/jquery.min.js"></script>
 </head>
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <h1>Gif Tastic</h1>
         </div>
@@ -31,7 +33,7 @@
                 <div>
                     <input class="form-control" type="text" id="topic-input" placeholder="Add Your Topic" autocomplete="off">
 
-                    <input class="btn btn-primary btn-block mt-1" id="add-topic" type="submit" value="Submit">
+                    <input class="btn btn-primary btn-block mt-1" id="add-topic" type="submit" value="Add Topic">
                 </div>
 
             </form>
@@ -40,35 +42,29 @@
         </div>
 
         <div class="row mt-5">
-            <div class="gif-container col-2 offset-1" data-index="0"></div>
-            <div class="gif-container col-2" data-index="1"></div>
-            <div class="gif-container col-2" data-index="2"></div>
-            <div class="gif-container col-2" data-index="3"></div>
-            <div class="gif-container col-2" data-index="4"></div>
+            <div class="gif-container col-4" data-index="0"></div>
+            <div class="gif-container col-4" data-index="1"></div>
+            <div class="gif-container col-4" data-index="2"></div>
         </div>
 
-        <div class="row mt-2">
-            <div class="gif-container col-2 offset-1" data-index="5"></div>
-            <div class="gif-container col-2" data-index="6"></div>
-            <div class="gif-container col-2" data-index="7"></div>
-            <div class="gif-container col-2" data-index="8"></div>
-            <div class="gif-container col-2" data-index="9"></div>
+        <div class="row mt-3">
+            <div class="gif-container col-4" data-index="3"></div>
+            <div class="gif-container col-4" data-index="4"></div>
+            <div class="gif-container col-4" data-index="5"></div>
         </div>
 
+        <div class="row mt-3">
+            <div class="gif-container col-4" data-index="6"></div>
+            <div class="gif-container col-4" data-index="7"></div>
+            <div class="gif-container col-4" data-index="8"></div>
+        </div>
 
-
-
-
-
-
-
-
-
-
+        <div class="row mt-3">
+            <div class="gif-container col-4" data-index="9"></div>
+        </div>
 
     </div>
 
-    <script type="text/javascript" src="./assets/javascript/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 
