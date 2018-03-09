@@ -48,7 +48,7 @@ $(document).ready(function () {
 
     function searchTopic(topic){
         topic = topic.trim().replace(/\s+/g, '-').toLowerCase();
-        var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=Kt83OfPSBZmeY8xlTAJxqIWI8Lv0NQdc&limit=10");
+        var xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=Kt83OfPSBZmeY8xlTAJxqIWI8Lv0NQdc&limit=10");
         xhr.done(function (response) {
             if (response.data) {
                 for (var i = 0; i < response.data.length; i++){
