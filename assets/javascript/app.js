@@ -48,7 +48,6 @@ $(document).ready(function () {
 
     function searchTopic(topic){
         topic = topic.trim().replace(/\s+/g, '-').toLowerCase();
-        console.log(topic);
         var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=Kt83OfPSBZmeY8xlTAJxqIWI8Lv0NQdc&limit=10");
         xhr.done(function (response) {
             if (response.data) {
@@ -90,7 +89,6 @@ $(document).ready(function () {
 
     $("#delete-topics").on("click", function (e) {
         e.preventDefault();
-        
         deleteTopics();
     });
 
