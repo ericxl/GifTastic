@@ -1,0 +1,43 @@
+body {
+    background-image: url('../images/light-veneer.png');
+}
+
+.card-columns {
+    column-count: 5;
+}
+
+.row > div[class*='col-'] {
+    display: flex;
+    flex:1 0 auto;
+  }
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.color-chocolate {
+    background-color: chocolate
+}
+
+.color-wheat {
+    background-color: wheat
+}
+
+.color-wheat p {
+    color: green
+}
+
+.color-green {
+    background-color: green
+}
+
+.color-cyan {
+    background-color: cyan
+}
+
+.color-royalblue {
+    background-color: royalblue
+}
+
